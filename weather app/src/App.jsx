@@ -83,7 +83,12 @@ function App() {
       <div>
         {loading && (
           <div className="loader-page">
-            <img src="https://cdn-icons-png.flaticon.com/512/7133/7133364.png" alt="" height={"100px"} width={"100px"}/>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/7133/7133364.png"
+              alt=""
+              height={"100px"}
+              width={"100px"}
+            />
             <h2>WEATHER APP</h2>
           </div>
         )}
@@ -123,7 +128,7 @@ function App() {
       </div>
       {
         <div className="m-auto w-full sect ">
-          <div className="bg-green-400 p-2 my-5 rounded flex justify-between items-center">
+          <div className="bg-green-600 p-2 my-5 rounded flex justify-between items-center">
             <h1 className="heading-2">
               {apiData.name || "Karachi"},{apiData?.sys?.country || "PK"}
             </h1>
